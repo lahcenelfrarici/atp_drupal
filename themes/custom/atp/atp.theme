@@ -1,0 +1,49 @@
+<?php
+
+// use Drupal;
+use Drupal\taxonomy\Entity\Term;
+use Drupal\views\ViewExecutable;
+use Drupal\Core\Menu\MenuTreeParameters;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\webform\WebformInterface;
+use Drupal\captcha\CaptchaPointInterface;
+use Drupal\Component\Utility\Html;
+
+
+function atp_theme_suggestions_form_alter(array &$suggestions, array $variables) {
+  // die("testtt");
+  if (isset($variables['element']['#id'])) {
+
+    $id = $variables['element']['#id'];
+
+    // // Suggest a template like form--example-form.html.twig
+    // $suggestions[] = 'form__' . strtr($id, '_', '__');
+    //  dump($suggestions , $id);
+     $sanitized_id = strtr($id, '-', '__');
+
+    // Add the form suggestion: form__{sanitized_id}
+    $suggestions[] = 'form__' . $sanitized_id;
+  }
+}
+function atp_preprocess(&$variables, $hook)
+{
+  $route_name = \Drupal::routeMatch()->getRouteName();
+  $request = \Drupal::request();
+  $route_name = \Drupal::routeMatch()->getRouteName();
+
+  $currentLanguageCode = \Drupal::languageManager()
+    ->getCurrentLanguage()
+    ->getId();
+  $currentLanguageCode = \Drupal::languageManager()
+    ->getCurrentLanguage()
+    ->getId();
+
+  $variables['language_id'] = $currentLanguageCode;
+  $variables['language_name'] = \Drupal::languageManager()->getCurrentLanguage()->getName();
+  $variables['language_id'] = $currentLanguageCode;
+  $variables['language_name'] = \Drupal::languageManager()->getCurrentLanguage()->getName();
+
+  $variables['route_name'] = $route_name;
+
+
+}

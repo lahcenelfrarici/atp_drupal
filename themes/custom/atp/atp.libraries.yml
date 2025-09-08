@@ -1,0 +1,39 @@
+global-css:
+  version: 1.0
+  css:
+    theme:
+      ./atp/assets/css/all.min.css: {}
+      ./atp/assets/css/bootstrap.min.css: {}
+      ./atp/assets/css/owl.carousel.min.css: {}
+      ./atp/assets/css/owl.theme.default.min.css: {}
+      ./atp/assets/css/aos.css: {}
+      # ./atp/assets/css/slick.css: {}
+      ./atp/assets/css/style.css: {}
+      ./atp/assets/css/style_dr.css: {}
+      # ./atp/assets/css/ayoub.css: {}
+      ./atp/assets/css/responsive.css: {}
+
+global-js:
+  version: 1.0
+  js:
+    # ./atp/assets/js/jquery-3.7.1.min.js: {}
+    ./atp/assets/js/jquery-ui.min.js: {}
+    ./atp/assets/js/bootstrap.bundle.min.js: {}
+    ./atp/assets/js/owl.carousel.min.js: {}
+    ./atp/assets/js/slick.min.js: {}
+    ./atp/assets/js/aos.js: {}
+    ./atp/assets/js/scripts.js: {}
+    # ./atp/assets/js/ayoub.js: {}
+  dependencies:
+    - core/jquery
+
+
+global-css-rtl:
+  css:
+    theme:
+      ./atp/assets/css/style-rtl.css: {}
+
+global-css-responsive:
+  css:
+    theme:
+      ./atp/assets/css/responsive.css: {}

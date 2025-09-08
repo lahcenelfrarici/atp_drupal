@@ -1,0 +1,13 @@
+.header-inside div#navbarNav {
+    justify-content: space-around;
+}
+.footer---btm .footer-link a {
+    color: #ccc;
+    text-decoration: none;
+}
+.footer---btm .row>div:first-child p {
+    margin-top: 10px;
+}
+.right--contact-multi-langue button#langDropdown {
+    text-transform: uppercase;
+}
