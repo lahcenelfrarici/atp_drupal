@@ -11,3 +11,9 @@
 .right--contact-multi-langue button#langDropdown {
     text-transform: uppercase;
 }
+section.carriere .slide-content p {
+    text-align: center;
+}
+.all-404 {
+    padding: 40px 0 10px 0;
+}

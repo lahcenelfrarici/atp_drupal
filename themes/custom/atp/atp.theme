@@ -47,3 +47,9 @@ function atp_preprocess(&$variables, $hook)
 
 
 }
+function atp_theme_suggestions_views_view_alter(array &$suggestions, array $variables)
+{
+  return [
+    'views_view__' . $variables['view']->id()
+  ];
+}

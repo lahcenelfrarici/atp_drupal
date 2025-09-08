@@ -78,25 +78,24 @@ gtag('config', 'G-9WWD1TRBQN');
 		<div
 			class="row">
 			<!-- Logo and slogan -->
-			<div
-				class="col-md-3 mb-4">
-				{# <a class="navbar-brand" href="#"> <img class="two--sc--img mb-3" src="/themes/custom/atp/atp/assets/images/logo.png"></a>
-				
-				
-				
-				          <p>Créer l'excellence architecturale à travers le Maroc et au-delà.</p> #}
-				{{ drupal_entity('block','atp_footer1') }}
+			<div class="col-md-3 mb-4">
+				<a class="navbar-brand" href="{{ path('<front>') }}">
+					<img class="two--sc--img mb-3" src="/themes/custom/atp/atp/assets/images/logo.png"></a>
+
+
+				<p>{{"Créer l'excellence architecturale à travers le Maroc et au-delà" |t}}.</p>
+				{# {{ drupal_entity('block','atp_footer1') }} #}
 			</div>
 
 			<!-- Quick links -->
 			<div class="col-md-3 mb-4">
 				<h6 class="mb-3">{{'Liens rapides'|t}}</h6>
 				{# <ul class="list-unstyled">
-				            <li><a href="#" class="footer-link">À propos</a></li>
-				            <li><a href="#" class="footer-link">Projets</a></li>
-				            <li><a href="#" class="footer-link">Carrières</a></li>
-				            <li><a href="#" class="footer-link">Contact</a></li>
-				          </ul> #}
+								            <li><a href="#" class="footer-link">À propos</a></li>
+								            <li><a href="#" class="footer-link">Projets</a></li>
+								            <li><a href="#" class="footer-link">Carrières</a></li>
+								            <li><a href="#" class="footer-link">Contact</a></li>
+								          </ul> #}
 				{% if page.footer_top_2 %}
 					{{page.footer_top_2}}
 				{% endif %}
@@ -106,9 +105,9 @@ gtag('config', 'G-9WWD1TRBQN');
 			<div
 				class="col-md-3 mb-4 localed-icon">
 				{# <h6 class="mb-3">Informations de contact</h6>
-				          <p><i class="fa-solid fa-location-dot"></i>Casablanca, Morocco</p>
-				          <p><i class="fa-solid fa-phone"></i>+212 522 22 24 45</p>
-				          <p><i class="fa-solid fa-envelope"></i>secretariat@agenceatp.com</p> #}
+								          <p><i class="fa-solid fa-location-dot"></i>Casablanca, Morocco</p>
+								          <p><i class="fa-solid fa-phone"></i>+212 522 22 24 45</p>
+								          <p><i class="fa-solid fa-envelope"></i>secretariat@agenceatp.com</p> #}
 				{{ drupal_entity('block','atp_footer3') }}
 			</div>
 
