@@ -8,6 +8,8 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\webform\WebformInterface;
 use Drupal\captcha\CaptchaPointInterface;
 use Drupal\Component\Utility\Html;
+use Drupal\webform\Entity\Webform;
+
 
 
 function atp_theme_suggestions_form_alter(array &$suggestions, array $variables) {
@@ -52,4 +54,43 @@ function atp_theme_suggestions_views_view_alter(array &$suggestions, array $vari
   return [
     'views_view__' . $variables['view']->id()
   ];
+}
+
+
+// ***
+/**
+ * Implements hook_theme_suggestions_form_element_alter().
+ */
+function atp_theme_suggestions_form_element_alter(array &$suggestions, array $variables) {
+  $element = $variables['element'];
+
+  // Check if it's a Webform field.
+  if (!empty($element['#webform_key'])) {
+    $key = strtr($element['#webform_key'], '-', '_');
+    $suggestions[] = 'form_element__webform__' . $key;
+  }
+
+  // Optional: add suggestion by webform ID too
+  if (!empty($element['#webform_id']) && !empty($element['#webform_key'])) {
+    $webform_id = strtr($element['#webform_id'], '-', '_');
+    $key = strtr($element['#webform_key'], '-', '_');
+    $suggestions[] = 'form_element__webform__' . $webform_id . '__' . $key;
+  }
+}
+/**
+ * Implements hook_preprocess_webform_element().
+ */
+function atp_preprocess_webform_element(&$variables) {
+  // Only apply to input-like elements.
+  if (!empty($variables['element']['#type']) && !in_array($variables['element']['#type'], ['webform_actions', 'markup'])) {
+    // Add "form-control" class to the element.
+    $variables['element']['#attributes']['class'][] = 'form-control';
+  }
+}
+function atp_theme_suggestions_input_alter(array &$suggestions, array $variables) {
+  // Check if this is the Webform submit button we want to target.
+  if (!empty($variables['element']['#attributes']['id']) && $variables['element']['#attributes']['id'] === 'edit-actions-submit') {
+    // Add a new custom template suggestion.
+    $suggestions[] = 'input__submit__webform_contact';
+  }
 }

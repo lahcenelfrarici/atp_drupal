@@ -1,4 +1,17 @@
 (function ($) {
+
+  // $(document).on('click', '.job-card .btn', function (e) {
+  //   e.preventDefault(); // prevent page reload
+  //   var jobTitle = $(this).closest('.job-card').find('.job-title').text().trim();
+  //   $('#edit-titre-hidden').val(jobTitle);
+  //   // $('#jobApplyModal').modal('show'); // show Bootstrap modal
+  // });
+
+  $('.job-card .btn').on('click', function (e) {
+    e.preventDefault(); // Prevent the default anchor behavior
+    var jobTitle = $(this).closest('.job-card').find('h5').text().trim();
+    $('#edit-titre-hidden').val(jobTitle);
+  });
   if ($('.banner_bread').length) {
     // Si l'élément existe, ajouter la classe 'regle_header' à la balise <header>
     $('.header-inside').addClass('regle_header');
