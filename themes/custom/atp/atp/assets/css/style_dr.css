@@ -176,4 +176,13 @@ section.contact_form form #block-atp-webform-2 div#edit-actions::before {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+.contact_form .social-icons {
+    gap: 0;
+}
+.owl-item.active.center .timeline-item .timeline-content {
+    width: 500px;
+    text-align: center;
+    bottom: -40%;
+    margin-top: 20%;
+    z-index: 666;
+}
