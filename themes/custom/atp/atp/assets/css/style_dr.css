@@ -60,9 +60,12 @@ header.header-inside.scrolled {
 .custom-file-upload input[type="file"] {
     display: none !important;
 }
-/* .js-form-item-titre-hidden {
+.js-form-item-titre-hidden {
     display: none;
-} */
+}
+section.section--4 .project-title {
+    padding: 0 !important;
+}
 .custom-file-upload input[type="file"] {
     position: absolute;
     height: 100%;
@@ -185,4 +188,35 @@ section.contact_form form #block-atp-webform-2 div#edit-actions::before {
     bottom: -40%;
     margin-top: 20%;
     z-index: 666;
+}
+#modal___carrire .modal-content .modal-body form div#edit-actions button {
+    border-radius: 144px;
+    background: #600100;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    width: 100%;
+    padding: 16px 32px;
+    border: 0;
+}
+
+#modal___carrire .modal-content .modal-body form div#edit-actions {
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding: calc(var(--bs-modal-padding) - var(--bs-modal-footer-gap) * .5);
+    background-color: var(--bs-modal-footer-bg);
+    border-top: var(--bs-modal-footer-border-width) solid var(--bs-modal-footer-border-color);
+    border-bottom-right-radius: var(--bs-modal-inner-border-radius);
+    border-bottom-left-radius: var(--bs-modal-inner-border-radius);
+    border: 0;
+}
+
+#modal___carrire .modal-content .modal-body form div#edit-actions button svg {
+    display: none;
 }
