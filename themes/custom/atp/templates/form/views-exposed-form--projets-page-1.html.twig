@@ -1,0 +1,62 @@
+{#
+/**
+ * @file
+ * Default theme implementation of a views exposed form.
+ *
+ * Available variables:
+ * - form: A render element representing the form.
+ *
+ * @see template_preprocess_views_exposed_form()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{# <form {{ attributes }}>
+  <div class="row mb-4">
+    <div class="col-12 col-md-3 mb-3">
+     {{ form.sort_bef_combine }}
+    </div>
+    <div class="col-12 col-md-3 mb-3">
+      {{ form.year }}
+    </div>
+
+    <!-- Action search -->
+    <div class="col-auto mb-3">
+      {{ form.actions }}
+    </div>
+  </div>
+</form> #}
+
+{# views-exposed-form--news-page-1.html.twig #}
+
+<form {{ attributes }}>
+<div class="col-md-4">
+					<div class="filter-option">
+           {{ form.title }}
+						{# <input type="text" class="form-control" placeholder="Rechercher des projets par nom ou description"> #}
+					</div>
+				</div>
+				<div class="col-md-2 select__list" id="select__list">
+					<div class="filter-option">
+						<div class="filter-label">Lieu</div>
+					{{ form.field_lieu_value }}
+					</div>
+				</div>
+				<div class="col-md-2 select__list">
+					<div class="filter-option">
+						<div class="filter-label">Type</div>
+						{{ form.field_type_value }}
+					</div>
+				</div>
+				<div class="col-md-2 select__list">
+					<div class="filter-option">
+						<div class="filter-label">Etat</div>
+					{{ form.field_etat_value }}
+					</div>
+				</div>
+        <div class="btn__sbmt col-md-2">
+          {{ form.actions.submit }}
+        </div>
+</form>
+

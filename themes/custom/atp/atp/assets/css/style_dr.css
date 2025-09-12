@@ -220,3 +220,96 @@ section.contact_form form #block-atp-webform-2 div#edit-actions::before {
 #modal___carrire .modal-content .modal-body form div#edit-actions button svg {
     display: none;
 }
+.show_fr_page:lang(en) {
+    display: none !important;
+}
+.show_en_page:lang(fr) {
+    display: none !important;
+}
+.sc---prj-2-filter .filter-option input#edit-title {
+    border: 1px solid #dee2e6 !important;
+    padding: 10px 15px !important;
+    border-radius: 6px !important;
+    border-radius: 99px;
+    border: 1px solid #600100;
+    display: flex;
+    width: 405px;
+    padding: 8px 8px 8px 16px;
+    align-items: center;
+    gap: 16px;
+    padding-left: 30px;
+    border-radius: 99px !important;
+    border: 1px solid #600100 !important;
+    padding: 8px 8px 8px 16px !important;
+        padding-left: 30px !important;
+}
+.sc---prj-1 .row form {
+    display: flex
+;
+    justify-content: space-between;
+}
+
+.btn__sbmt input {
+    background: #600100;
+    color: #fff;
+    width: 100%;
+    border-radius: 134px;
+    padding: 5px 20px 5px 20px;
+}
+
+.sc---prj-1 .row form {
+    gap: 0 5px;
+}
+
+.btn__sbmt {
+    width: auto !important;
+}
+.pagination_pager ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.pagination_pager ul li {
+    margin: 0 10px;
+    list-style: none;
+    background: linear-gradient(90deg, #600100 0%, #390100 39.42%, #600100 100%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    border: 1px solid #600100;
+}
+
+.pagination_pager ul a {
+    color: #fff;
+}
+
+.pagination_pager ul a span {
+    color: #fff;
+}
+
+.pagination_pager ul .active {
+    background: transparent;
+}
+
+.pagination_pager ul .active a ,.pagination_pager ul .active a span {
+    color: #600100;
+}
+.pagination_pager ul .active a, .pagination_pager ul .active a span,.pagination_pager ul a {
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#select__list select option {
+    background: #fff;
+    color: rgba(96, 1, 0, 0.50);
+}
