@@ -38,17 +38,17 @@
 /.gitattributes
 /.htaccess
 /.ht.router.php
-/autoload.php
-/composer.json
-/composer.lock
-/example.gitignore
-/index.php
-/INSTALL.txt
-/LICENSE.txt
-/README.txt
-/robots.txt
-/update.php
-/web.config
+# /autoload.php
+# /composer.json
+# /composer.lock
+# /example.gitignore
+# /index.php
+# /INSTALL.txt
+# /LICENSE.txt
+# /README.txt
+# /robots.txt
+# /update.php
+# /web.config
 /modules/contrib/*
 !/modules/contrib/pathauto/
 /modules/contrib/pathauto/*
