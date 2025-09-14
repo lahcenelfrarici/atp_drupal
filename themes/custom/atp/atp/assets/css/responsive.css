@@ -171,7 +171,13 @@
 .Project_detail_page_img img {
     height: 100%;
 }
-
+.path-projets .header-inside .nav-link:hover, .path-projets .header-inside .nav-link.active {
+    background: transparent;
+}
+body:not(.path-frontpage) ul.navbar-nav.ms-auto {
+    border-radius: inherit;
+    background: transparent;
+}
 .Project_detail_page_img img {
 
     width: 100%;

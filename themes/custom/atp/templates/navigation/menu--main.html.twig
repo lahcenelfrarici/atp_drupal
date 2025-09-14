@@ -21,21 +21,6 @@
  */
 #}
 {% import _self as menus %}
- {# <ul class="navbar-nav ms-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="/index.html">Accueil</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="/Our_hestory.html">Agence</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="/Nos_projets.html">Projets</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="/carriere.html">Carrières</a>
-					</li>
-
-				</ul> #}
 {# Render the menu with Bootstrap wrapper and custom classes #}
 <ul class="navbar-nav ms-auto">
   {{ menus.menu_links(items, attributes, 0) }}
@@ -45,7 +30,7 @@
   {% import _self as menus %}
   {% for item in items %}
     {% set has_children = item.below is not empty %}
-    <li class="nav-item{{ has_children ? ' dropdown' : '' }}">
+    {# <li class="nav-item{{ has_children ? ' dropdown' : '' }}">
       <a
         href="{{ item.url }}"
         class="nav-link{{ has_children ? ' dropdown-toggle' : '' }}"
@@ -69,7 +54,33 @@
           {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
         </ul>
       {% endif %}
-    </li>
+    </li> #}
+    <li class="nav-item{{ has_children ? ' dropdown' : '' }}">
+  <a
+    href="{{ item.url }}"
+    class="nav-link{{ has_children ? ' dropdown-toggle' : '' }}{{ item.in_active_trail ? ' active' : '' }}"
+    {% if has_children %}
+      id="navbarScrollingDropdown-{{ loop.index }}"
+      role="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    {% endif %}
+  >
+    {{ item.title }}
+    {% if has_children %}
+      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="8" viewBox="0 0 11 8" fill="none">
+        <path d="M1.2832 2L5.4082 6L9.5332 2" stroke="#000849" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    {% endif %}
+  </a>
+
+  {% if has_children %}
+    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown-{{ loop.index }}">
+      {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
+    </ul>
+  {% endif %}
+</li>
+
   {% endfor %}
 {% endmacro %}
 

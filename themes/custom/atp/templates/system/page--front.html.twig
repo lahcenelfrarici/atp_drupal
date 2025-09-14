@@ -77,11 +77,9 @@
 	<div class="row">
 		<div class="col-lg-12">
 			<div class="title--sc">
-				<h2 class="section-title">Derniers projets</h2>
+				<h2 class="section-title">{{'Derniers projets'|t}}</h2>
 
-				<p class="section-description-1 text-center">Des projets architecturaux et urbains qui façonnent le présent
-										              et préparent
-										              l'avenir.</p>
+				<p class="section-description-1 text-center">{{"Des projets architecturaux et urbains qui façonnent le présent et préparent l'avenir"|t}}.</p>
 			</div>
 
 		</div>
@@ -89,7 +87,7 @@
 
 
 	<div class="row">
-		<div class="col-md-6 col-lg-4 mb-4">
+		{# <div class="col-md-6 col-lg-4 mb-4">
 			<div class="project-card card">
 				<a href="/Project_detail_page.html">
 					<img src="/themes/custom/atp/atp/assets/images/new1.png" class="project-img card-img-top" alt="Projet architectural moderne">
@@ -144,12 +142,13 @@
 					</div>
 				</a>
 			</div>
-		</div>
+		</div> #}
+      	{{ drupal_view('projets','block_1') }}
 	</div>
 
 	<div class="text-center">
-		<a href="#" class="btn btn-discover">
-			Voir tous nos projets
+		<a href="{{ path('view.projets.page_1') }}" class="btn btn-discover">
+			{{'Voir tous nos projets'|t}}
 			<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
 				<rect width="32" height="32" rx="16" fill="white"/>
 				<g clip-path="url(#clip0_6010_3350)">

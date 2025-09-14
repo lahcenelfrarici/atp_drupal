@@ -32,8 +32,20 @@
 			<a class="navbar-brand logo__2" href="{{ path('<front>') }}">
 				<img class="two--sc--img" src="/themes/custom/atp/atp/assets/images/logo-2.png"></a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-				<span class="navbar-toggler-icon"></span>
+				{# <span class="navbar-toggler-icon"></span> #}
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="20" viewBox="0 0 28 20" fill="none">
+  <path d="M0.828125 0.78125H27.0781M0.828125 9.53125H27.0781M0.828125 18.2813H27.0781" stroke="#600100" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
 			</button>
+      		<div class="right--contact-multi-langue" id="mobile_multi_right">
+				<div class="d-flex align-items-center gap-3">
+
+
+            {{ drupal_entity('block','atp_languageswitcher') }}
+
+
+				</div>
+			</div>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				{# <ul class="navbar-nav ms-auto">
 					<li class="nav-item">
