@@ -313,3 +313,48 @@ section.contact_form form #block-atp-webform-2 div#edit-actions::before {
     background: #fff;
     color: rgba(96, 1, 0, 0.50);
 }
+.path-projets .header-inside .nav-link:hover ,.path-projets .header-inside .nav-link.active{
+    border-radius: 10000px;
+    background: #FFF;
+    color: #600100 !important;
+
+}
+ul.pagination-success {
+    padding-left: 0;
+}
+
+
+.sc---prj-2-filter .filter-option input#edit-title {
+    width: auto;
+    width: 100%;
+}
+.path-projets .header-inside .nav-link:after{
+    display:none
+}
+div#mobile_multi_right {
+    display: none;
+}
+.path-projets .header-inside ul {
+    padding: 0 10px;
+}
+
+.path-projets .header-inside .nav-link {
+    padding: 6px 15px;
+    margin: 7px 10px;
+}
+.header-inside .nav-link.active:after {
+    width: 100%;
+}
+.header-inside .nav-link.active {
+    color: #fff !important;
+}
+section.section--4 .container section.section--4 .col-lg-12 {
+    display: none;
+}
+header.header-inside .right--contact-multi-langue ul {
+    min-width: 70px;
+    padding: 5px 0 5px 8px;
+}
+header.header-inside .right--contact-multi-langue ul a {
+    color: #600100;
+}
