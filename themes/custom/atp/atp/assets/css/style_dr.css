@@ -358,3 +358,6 @@ header.header-inside .right--contact-multi-langue ul {
 header.header-inside .right--contact-multi-langue ul a {
     color: #600100;
 }
+#slider--animate .slide-title {
+    padding-bottom: 20px;
+}
