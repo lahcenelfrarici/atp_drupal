@@ -2995,3 +2995,9 @@ section.section--2-modal p {
 .notre-histoire .owl-carousel {
     height: 350px;
 }
+.banner-last #slider--animate .owl-slide .slide-content {
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 10px 0;
+}
