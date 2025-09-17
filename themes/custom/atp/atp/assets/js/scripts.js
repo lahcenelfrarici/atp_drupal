@@ -69,11 +69,11 @@
     responsive: {
       0: {
         items: 1,
-        center: false,
+        center: true,
       },
       768: {
         items: 1,
-        center: false,
+        center: true,
       },
       1200: {
         items: 3
