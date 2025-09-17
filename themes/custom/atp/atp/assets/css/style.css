@@ -2976,7 +2976,7 @@ section.section--4 .title--sc p {
 body.path-frontpage section.section--2-modal  p.mb-2.fw-bold {
     color: #151515;
     text-align: justify;
- 
+
     font-size: 18px;
     font-style: normal;
     font-weight: 400 !important;
@@ -2991,4 +2991,7 @@ section.section--2-modal p {
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+}
+.notre-histoire .owl-carousel {
+    height: 350px;
 }
