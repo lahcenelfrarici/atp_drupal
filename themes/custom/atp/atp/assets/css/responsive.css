@@ -102,6 +102,9 @@
 }
 
 @media (max-width: 991px) {
+  .sc---prj-1 .row form >div {
+    width: 100%;
+}
   .notre-equipe-content .notre-equipe-image {
     order: 2;
 }
