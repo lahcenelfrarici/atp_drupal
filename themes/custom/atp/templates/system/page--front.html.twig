@@ -60,18 +60,34 @@
 
 {{ drupal_entity('block','atp_hpsectionslider') }}
 {{ drupal_entity('block','atp_notremission') }}
-	<div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true"> <div class="modal-dialog modal-dialog-centered modal-lg">
+	{# <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true"> <div class="modal-dialog modal-dialog-centered modal-lg">
 		<div class="modal-content bg-dark">
 			<div class="modal-body p-0 position-relative">
 				<button type="button" class="btn-close btn-close-white position-absolute end-0 m-2" data-bs-dismiss="modal" aria-label="Close"></button>
 				<div
 					class="ratio ratio-16x9">
 					<!-- iframe directly in HTML -->
-					<iframe id="videoIframe" src="https://www.youtube.com/embed/VIDEO_ID" title="ATP Video" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<iframe id="videoIframe" src="/sites/default/files/2025-09/WhatsApp%20Video%202025-09-17%20at%2022.50.12.mp4" title="ATP Video" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> #}
+  <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark">
+      <div class="modal-body p-0 position-relative">
+        <button type="button" class="btn-close btn-close-white position-absolute end-0 m-2" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="ratio ratio-16x9">
+          <video id="videoPlayer" controls>
+            <source src="/sites/default/files/2025-09/WhatsApp%20Video%202025-09-17%20at%2022.50.12.mp4" type="video/mp4">
+
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 </div></section>{{ drupal_entity('block','atp_chiffrescles') }}<section class="section--4">
 <div class="container">
 	<div class="row">

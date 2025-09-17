@@ -142,9 +142,20 @@
   // Run on page load and scroll
   animateCounter();
   $(window).scroll(animateCounter);
-  $('.section--2-modal #videoModal').on('hidden.bs.modal', function () {
-    var $iframe = $(this).find('iframe');
-    $iframe.attr('src', $iframe.attr('src')); // reload iframe to stop video
+  // $('.section--2-modal #videoModal').on('hidden.bs.modal', function () {
+  //   var $iframe = $(this).find('iframe');
+  //   $iframe.attr('src', $iframe.attr('src')); // reload iframe to stop video
+  // });
+  // When modal opens → play video
+  $('#videoModal').on('shown.bs.modal', function () {
+    $('#videoPlayer')[0].play();
+  });
+
+  // When modal closes → pause and reset video
+  $('#videoModal').on('hidden.bs.modal', function () {
+    var video = $('#videoPlayer')[0];
+    video.pause();
+    video.currentTime = 0; // reset to start
   });
 
   $(window).scroll(function () {
