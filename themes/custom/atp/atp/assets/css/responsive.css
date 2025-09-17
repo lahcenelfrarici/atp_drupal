@@ -101,13 +101,21 @@
 
 }
 
-@media (max-width: 991px) {
-  .sc---prj-1 .row form >div {
-    width: 100%;
+@media (min-width: 992px) {
+  header.header-inside .container ul li:last-child {
+    display: none;
+  }
 }
+
+@media (max-width: 991px) {
+  .sc---prj-1 .row form>div {
+    width: 100%;
+  }
+
   .notre-equipe-content .notre-equipe-image {
     order: 2;
-}
+  }
+
   .contact_form .contact-info {
     margin-top: 20px;
   }
