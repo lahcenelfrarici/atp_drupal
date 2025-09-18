@@ -105,6 +105,28 @@
   header.header-inside .container ul li:last-child {
     display: none;
   }
+
+
+  .contact_form .form-container form>div {
+    width: 48%;
+  }
+
+  .contact_form .form-container form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px 0;
+  }
+
+  .contact_form .form-container form>.js-form-item-subject,
+  .contact_form .form-container form>.js-form-item-message {
+    width: 100%;
+  }
+
+  .contact_form .form-container form div#edit-actions {
+    width: 100%;
+  }
 }
 
 @media (max-width: 991px) {
