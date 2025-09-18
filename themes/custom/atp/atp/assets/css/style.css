@@ -2542,6 +2542,7 @@ section.section--4 .project-title {
   background: #F3F3F3;
   box-shadow: 0 4px 17.2px 0 rgba(0, 0, 0, .06);
   padding: 30px 35px;
+  height: 100%;
 }
 
 .posy_all_offre .job-card__head ul>li {
