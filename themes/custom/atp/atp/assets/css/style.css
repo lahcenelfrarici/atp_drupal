@@ -3001,3 +3001,7 @@ section.section--2-modal p {
     justify-content: center;
     gap: 10px 0;
 }
+div#videoModal .btn-close {
+    z-index: 22;
+    opacity: 1;
+}
