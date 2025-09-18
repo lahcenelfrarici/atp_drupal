@@ -130,6 +130,12 @@
 }
 
 @media (max-width: 991px) {
+  .contact_form .form-container form {
+    gap: 15px 0;
+    display: flex
+;
+    flex-direction: column;
+}
   .sc---prj-1 .row form>div {
     width: 100%;
   }
