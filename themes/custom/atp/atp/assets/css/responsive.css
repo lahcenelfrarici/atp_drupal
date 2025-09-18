@@ -1,17 +1,6 @@
 /* Responsive adjustments */
 @media (max-width: 992px) {
-    .owl-item.active.center .timeline-item .timeline-content {
-    height: 118px;
-    display: flex;
-    align-items: start;
-    justify-content: start;
-    padding-top: 30px;
-    bottom: -45%;
-}
 
-.notre-histoire .owl-carousel .owl-stage-outer {
-    padding-bottom: 70px;
-}
   #slider--animate .slide-content {
     margin-left: 5%;
   }
@@ -114,6 +103,18 @@
 }
 
 @media (min-width: 992px) {
+      .owl-item.active.center .timeline-item .timeline-content {
+    height: 118px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    padding-top: 30px;
+    bottom: -45%;
+}
+
+.notre-histoire .owl-carousel .owl-stage-outer {
+    padding-bottom: 70px;
+}
   header.header-inside .container ul li:last-child {
     display: none;
   }
