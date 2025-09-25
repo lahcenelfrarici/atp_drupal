@@ -427,3 +427,14 @@ div#block-atp-footer3 p {
   align-items: center;
   gap: 0 10px;
 }
+section.section--2.container h2 {
+    font-size: 2rem;
+}
+.partner-logo img {
+    height: 120px;
+}
+
+.partner-logo {
+    height: 120px;
+    margin-bottom: 0;
+}
