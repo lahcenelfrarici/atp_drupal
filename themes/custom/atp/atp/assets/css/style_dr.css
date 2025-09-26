@@ -491,3 +491,6 @@ span.contact-icon svg {
 .job-card__body ul{
     margin-top: -5px;
 }
+.path-frontpage section.section--4 .title--sc p {
+    display: none;
+}
