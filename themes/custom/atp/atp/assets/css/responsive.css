@@ -106,6 +106,7 @@
 @media (min-width: 992px) {
     div#block-atp-our-hestory2 .section--2-modal .video-wrapper.position-relative img {
     height: 400px;
+            padding-left: 15px;
 }
   .footer---btm .row>div:first-child p {
     display: none;
