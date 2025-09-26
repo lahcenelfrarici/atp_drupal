@@ -1,8 +1,6 @@
 /* Responsive adjustments */
 @media (max-width: 992px) {
-  div#block-atp-our-hestory2 .section--2-modal .video-wrapper.position-relative img {
-    height: 400px;
-}
+
 
   #slider--animate .slide-content {
     margin-left: 5%;
@@ -106,6 +104,9 @@
 }
 
 @media (min-width: 992px) {
+    div#block-atp-our-hestory2 .section--2-modal .video-wrapper.position-relative img {
+    height: 400px;
+}
   .footer---btm .row>div:first-child p {
     display: none;
 }
