@@ -421,7 +421,11 @@ header.header-inside .right--contact-multi-langue ul a {
 .path-frontpage #slider--animate .slide-title {
   padding-bottom: 0;
 }
+.path-frontpage #slider--animate .slide-content {
 
+    position: absolute;
+
+}
 div#block-atp-footer3 p {
   display: flex;
   align-items: center;
@@ -464,4 +468,11 @@ button.btn.btn-contact a {
 }
 span.contact-icon svg {
     padding: 0 2px;
+}
+#slider--animate .owl-slide img {
+    width: 100%;
+    height: 100%;
+}
+#slider--animate .owl-slide {
+    width: 100%;
 }

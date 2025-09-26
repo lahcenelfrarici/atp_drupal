@@ -104,6 +104,27 @@
 
 @media (min-width: 992px) {
   .footer---btm .row>div:first-child p {
+    display: none;
+}
+
+.footer---btm .row>div {
+    margin-bottom: 0 !important;
+}
+
+.footer---btm {
+    padding: 30px 0 15px 0 !important;
+}
+
+div#block-atp-footer3 p {margin-bottom: 10px;}
+
+ul.list-unstyled.footer-link li a, .footer---btm p {
+    line-height: normal;
+}
+
+.border-light {
+    margin: 0px 0 15px 0;
+}
+  .footer---btm .row>div:first-child p {
     padding-right: 30px;
 }
   .owl-item.active.center .timeline-item .timeline-content {
