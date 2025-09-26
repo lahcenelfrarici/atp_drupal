@@ -1,5 +1,20 @@
 (function ($) {
+// Get the current path
+  var path = window.location.pathname;
 
+  // Normalize the path (remove trailing slash)
+  if (path.endsWith('/')) {
+    path = path.slice(0, -1);
+  }
+
+  // Check if path is home (empty, /fr, or /en)
+  if (path === '' || path === '/fr' || path === '/en') {
+    // Remove active from other links
+    $('.navbar-expand-lg .navbar-nav .nav-link').removeClass('active');
+
+    // Add active to the first menu item
+    $('.navbar-expand-lg .navbar-nav .nav-item:first-child .nav-link').addClass('active');
+  }
   // $(document).on('click', '.job-card .btn', function (e) {
   //   e.preventDefault(); // prevent page reload
   //   var jobTitle = $(this).closest('.job-card').find('.job-title').text().trim();

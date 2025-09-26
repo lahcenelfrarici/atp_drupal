@@ -103,6 +103,9 @@
 }
 
 @media (min-width: 992px) {
+  .footer---btm .row>div:first-child p {
+    padding-right: 30px;
+}
   .owl-item.active.center .timeline-item .timeline-content {
     height: 118px;
     display: flex;
@@ -231,7 +234,8 @@
   }
 
   .project-card .card-body {
-    position: relative;
+            position: absolute;
+        background: transparent !important;
   }
 
   /* .project-card .card-body >div , .project-card .card-body h3 {

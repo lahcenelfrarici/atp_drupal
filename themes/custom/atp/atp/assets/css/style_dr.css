@@ -438,3 +438,30 @@ section.section--2.container h2 {
     height: 120px;
     margin-bottom: 0;
 }
+.project-card.card {
+    height: 343px;
+}
+
+.project-card.card img {
+    height: 100%;
+}
+span.contact-icon {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 16777200px;
+    background: #600100;
+}
+
+
+button.btn.btn-contact a {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+span.contact-icon svg {
+    padding: 0 2px;
+}
