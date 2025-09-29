@@ -258,7 +258,7 @@ section.contact_form form #block-atp-webform-2 div#edit-actions::before {
   display: none !important;
 }
 
-.sc---prj-2-filter .filter-option input#edit-title {
+.sc---prj-2-filter .filter-option input#edit-title,.sc---prj-1 .row form>div:first-child .filter-option input {
   border: 1px solid #dee2e6 !important;
   padding: 10px 15px !important;
   border-radius: 6px !important;
@@ -364,7 +364,7 @@ ul.pagination-success {
 }
 
 
-.sc---prj-2-filter .filter-option input#edit-title {
+.sc---prj-2-filter .filter-option input#edit-title ,.sc---prj-1 .row form>div:first-child .filter-option input{
   width: auto;
   width: 100%;
 }
