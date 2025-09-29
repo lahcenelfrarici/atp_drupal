@@ -176,7 +176,7 @@
     height: 118px;
     display: flex;
     align-items: start;
-    justify-content: start;
+    justify-content: center;
     padding-top: 30px;
     bottom: -45%;
   }
