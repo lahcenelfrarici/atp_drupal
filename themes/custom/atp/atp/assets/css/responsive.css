@@ -215,7 +215,8 @@
 @media (max-width: 991px) {
   #slider--animate .owl-slide img {
     object-fit: cover;
-}
+  }
+
   #slider--animate .owl-dots {
 
     margin-left: 0;
@@ -673,6 +674,28 @@ body:not(.path-frontpage) a.navbar-brand.logo__2 {
   .counter-item:last-child {
     width: 100%;
     min-width: 100%;
+  }
+
+  .counter-value {
+    font-size: 30px;
+  }
+
+  .counter-text {
+    font-size: 12px;
+  }
+
+
+  .counter-item {
+    width: 32% !important;
+    min-width: 32% !important;
+  }
+
+  .counter-item:last-child {
+    min-width: 32% !important;
+  }
+
+  .counter-container {
+    gap: 0 5px;
   }
 }
 
