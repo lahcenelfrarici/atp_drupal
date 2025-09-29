@@ -213,6 +213,9 @@
 }
 
 @media (max-width: 991px) {
+  #slider--animate .owl-slide img {
+    object-fit: cover;
+}
   #slider--animate .owl-dots {
 
     margin-left: 0;
