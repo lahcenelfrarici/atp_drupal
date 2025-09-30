@@ -189,7 +189,7 @@ body {
 }
 
 /* Overlay for better text visibility */
-.path-frontpage .slide-overlay {
+ .slide-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -199,6 +199,9 @@ body {
   z-index: 1;
   height: 700px;
 }
+ .banner-last .slide-overlay {
+  display: none;
+ }
 
 .owl-item.active.center .timeline-item .timeline-content {
   display: block;
