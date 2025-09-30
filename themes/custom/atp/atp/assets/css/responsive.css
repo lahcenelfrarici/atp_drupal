@@ -697,6 +697,18 @@ body:not(.path-frontpage) a.navbar-brand.logo__2 {
   .counter-container {
     gap: 0 5px;
   }
+
+  .sc---prj-1 .row form .col-md-8 {
+    flex-direction: column;
+  }
+
+  .col-md-2.select__list {
+    width: 100%;
+  }
+
+  .col-md-2.select__list select {
+    width: 100%;
+  }
 }
 
 @media (max-width: 767px) {}
