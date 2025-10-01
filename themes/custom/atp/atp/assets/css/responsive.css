@@ -104,9 +104,19 @@
 }
 
 @media (min-width: 992px) {
-section.galerie-de-projets .container>div {
+  section.galerie-de-projets .container>div {
+    height: 300px;
+  }
+
+  section.galerie-de-projets .container>div img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  section.galerie-de-projets .container>div {
     width: 49%;
-}
+  }
+
   section.section--4 .row .views-infinite-scroll-content-wrapper {
     display: flex;
     flex-wrap: wrap;
