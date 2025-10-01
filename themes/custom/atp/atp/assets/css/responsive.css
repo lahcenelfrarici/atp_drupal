@@ -104,7 +104,9 @@
 }
 
 @media (min-width: 992px) {
-
+section.galerie-de-projets .container>div {
+    width: 49%;
+}
   section.section--4 .row .views-infinite-scroll-content-wrapper {
     display: flex;
     flex-wrap: wrap;

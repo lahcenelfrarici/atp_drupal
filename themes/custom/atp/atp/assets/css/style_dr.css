@@ -507,3 +507,6 @@ span.contact-icon svg {
 .col-md-2.select__list {
     width: auto;
 }
+section.Project_detail_page .project-description {
+    display: block;
+}
