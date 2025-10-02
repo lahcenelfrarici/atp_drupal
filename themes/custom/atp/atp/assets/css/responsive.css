@@ -721,6 +721,20 @@ body:not(.path-frontpage) a.navbar-brand.logo__2 {
   .col-md-2.select__list select {
     width: 100%;
   }
+
+  .owl-item.active.center .timeline-item .timeline-content {
+    min-height: 90px;
+    align-items: flex-start;
+    justify-content: center;
+    display: flex;
+    padding: 0 !important;
+    margin: 0 !important;
+    text-align: center;
+  }
+
+  .wrapper_img img {
+    height: 100%;
+  }
 }
 
 @media (max-width: 767px) {}
