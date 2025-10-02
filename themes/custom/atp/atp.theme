@@ -103,3 +103,34 @@ function atp_theme_suggestions_views_exposed_form_alter(array &$suggestions, arr
     $variables['form']['#id']
   );
 }
+// function atp_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+//   // Replace 'your_webform_id' with your webform machine name.
+// if ($form_id === 'webform_submission_postuler_poste_node_2_add_form') {
+//     if (isset($form['resume'])) {
+//       // Make the file input required
+//       $form['resume']['#required'] = TRUE;
+//     }
+//   }
+// }
+
+function atp_form_views_exposed_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Check the exposed form ID for your 'projets' view.
+  // You can confirm by inspecting the <form id=""> in your markup.
+  if ($form['#id'] === 'views-exposed-form-projets-page-1') {
+
+    // Change "All" option in Lieu filter.
+    if (isset($form['field_lieu_value']['#options']['All'])) {
+      $form['field_lieu_value']['#options']['All'] = t('Ville');
+    }
+
+    // Change "All" option in Type filter.
+    if (isset($form['field_type_value']['#options']['All'])) {
+      $form['field_type_value']['#options']['All'] = t('Catégorie');
+    }
+
+    // Change "All" option in Etat filter.
+    if (isset($form['field_etat_value']['#options']['All'])) {
+      $form['field_etat_value']['#options']['All'] = t('Statut');
+    }
+  }
+}

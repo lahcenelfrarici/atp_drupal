@@ -560,6 +560,38 @@ button.ui-dialog-titlebar-close {
   cursor: pointer;
   display: inline-block;
 }
+button.ui-dialog-titlebar-close {outline: none;background-color: transparent;filter: invert(1) grayscale(100%) brightness(200%);top: 0 !important;margin: 0 !important;}
+
+.ui-dialog .ui-dialog-title {
+    display: none;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {position: relative;top: 2px !important;}
+
+.ui-widget-content.ui-front {
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: auto !important;
+    left: auto !important;
+    right: 18px;
+    top: 100px !important;
+}
+
+.ui-widget-content.ui-front div#ui-id-1 {
+    min-height: auto !important;
+    max-height: none!important;
+    color: #fff;
+      font-family: Electrolize;
+    text-transform: capitalize;
+}
+
+.ui-dialog .ui-widget-header {
+    margin: 0;
+    padding: 0;
+}
+/*  */
 .aligne__this {
     display: flex;
     align-items: center;

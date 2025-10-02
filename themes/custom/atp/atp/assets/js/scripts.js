@@ -1,4 +1,6 @@
 (function ($) {
+
+
 // Get the current path
   var path = window.location.pathname;
 
@@ -233,3 +235,4 @@
 // $(document).ready(function () {
 //   $('#exampleModal').modal('show');
 // });
+
