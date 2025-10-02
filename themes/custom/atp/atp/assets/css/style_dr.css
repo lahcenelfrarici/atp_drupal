@@ -560,4 +560,13 @@ button.ui-dialog-titlebar-close {
   cursor: pointer;
   display: inline-block;
 }
+.aligne__this {
+    display: flex;
+    align-items: center;
+    /* width: 100%; */
+}
+
+.aligne__this >h3,.aligne__this >div {
+    width: 50%;
+}
 
