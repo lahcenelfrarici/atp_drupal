@@ -510,3 +510,27 @@ span.contact-icon svg {
 section.Project_detail_page .project-description {
     display: block;
 }
+.page-node-type-nos-projets .section--4 h2 {
+    color: #600100;
+}
+.contact_form .form-container form input#edit-actions-submit {
+    border-radius: 144px;
+    background: #600100;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    margin-top: 20px;
+}
+/* #webform-submission-postuler-poste-node-2-add-form .hidden_contact_1 {
+    display: none;
+}
+.hidden_carriere_1 {
+    width: 100%;
+}
+
+.hidden_contact_1 {
+    width: 100%;
+} */
