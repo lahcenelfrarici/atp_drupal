@@ -442,13 +442,17 @@ section.section--2.container h2 {
     height: 120px;
     margin-bottom: 0;
 }
-.project-card.card {
+/* .project-card.card {
     height: 343px;
-}
+} */
 
 .project-card.card img {
     height: 100%;
 }
+.project-card.card img {
+    aspect-ratio: 16 / 9;
+}
+
 span.contact-icon {
     display: flex;
     width: 32px;
