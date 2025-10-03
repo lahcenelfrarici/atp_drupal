@@ -615,3 +615,18 @@ section.section--4 .project-title {
 .see-all-link {
     font-size: 15px;
 }
+section.banner_bread.carriere.Project_detail_page_banner {
+    background: linear-gradient(90deg, #600100 0%, #390100 39.42%, #600100 100%) !important;
+}
+
+section.banner_bread.carriere.Project_detail_page_banner img {
+    opacity: 0;
+}
+
+section.banner_bread.carriere.Project_detail_page_banner >div>div {
+    height: 419px !important;
+}
+
+section.banner_bread.carriere.Project_detail_page_banner .slide-overlay {
+    display: none;
+}
