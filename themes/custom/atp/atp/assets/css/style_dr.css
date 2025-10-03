@@ -606,3 +606,12 @@ button.ui-dialog-titlebar-close {outline: none;background-color: transparent;fil
     width: 50%;
 }
 
+section.section--4 .project-title {
+    font-size: 15px;
+    display: flex;
+    width: 70%;
+}
+
+.see-all-link {
+    font-size: 15px;
+}
