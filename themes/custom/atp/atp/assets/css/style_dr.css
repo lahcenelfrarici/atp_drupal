@@ -630,3 +630,32 @@ section.banner_bread.carriere.Project_detail_page_banner >div>div {
 section.banner_bread.carriere.Project_detail_page_banner .slide-overlay {
     display: none;
 }
+
+div#slider--animate .aligne__this {
+    width: 100%;
+    justify-content: left;
+}
+
+div#slider--animate .aligne__this >h3, div#slider--animate .aligne__this >div {
+    width: auto;
+    font-size: 16px;
+}
+
+div#slider--animate .aligne__this {
+    width: 100%;
+    justify-content: left;
+}
+
+div#slider--animate .aligne__this >h3, div#slider--animate .aligne__this >div {
+    width: auto;
+    font-size: 16px;
+}
+
+div#slider--animate .aligne__this {
+    align-items: center;
+    justify-content: space-between;
+}
+
+h3.project-title_aligne {
+    margin-bottom: 0;
+}

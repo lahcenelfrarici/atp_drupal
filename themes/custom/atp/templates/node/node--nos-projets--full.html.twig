@@ -118,12 +118,22 @@
         <div class="slide-content">
           <h1 class="slide-title text-center">{{ node.title.value }}</h1>
           <br>
-          <p class="mb-3 text-center cible___title"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+          <div class="aligne__this">
+                  <h3 class="project-title_aligne">{{ node.field_annee_projet.value }} - {{ node.field_pays_et_villes.value }}</h3>
+<div class="see-all-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M15.1891 7.21816L8.03906 14.3682L4.83906 11.1682L5.53906 10.4582L8.03906 12.9582L14.4791 6.50816L15.1891 7.21816ZM9.53906 0.618164C14.7891 0.618164 19.0391 4.86816 19.0391 10.1182C19.0391 15.3682 14.7891 19.6182 9.53906 19.6182C4.28906 19.6182 0.0390625 15.3682 0.0390625 10.1182C0.0390625 4.86816 4.28906 0.618164 9.53906 0.618164ZM9.53906 1.61816C4.84906 1.61816 1.03906 5.42816 1.03906 10.1182C1.03906 14.8082 4.84906 18.6182 9.53906 18.6182C14.2291 18.6182 18.0391 14.8082 18.0391 10.1182C18.0391 5.42816 14.2291 1.61816 9.53906 1.61816Z" fill="white"></path>
+                    </svg>
+{{ node.field_etat.value }}
+    </div>
+
+                </div>
+          {# <p class="mb-3 text-center cible___title"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
               viewBox="0 0 24 24" fill="none">
               <path
                 d="M17.15 9.6L10 16.75L6.8 13.55L7.5 12.84L10 15.34L16.44 8.89L17.15 9.6ZM11.5 3C16.75 3 21 7.25 21 12.5C21 17.75 16.75 22 11.5 22C6.25 22 2 17.75 2 12.5C2 7.25 6.25 3 11.5 3ZM11.5 4C6.81 4 3 7.81 3 12.5C3 17.19 6.81 21 11.5 21C16.19 21 20 17.19 20 12.5C20 7.81 16.19 4 11.5 4Z"
                 fill="white" />
-            </svg> {{ node.field_annee_projet.value }} <span> / </span> {{ node.field_pays_et_villes.value }}</p>
+            </svg> {{ node.field_annee_projet.value }} <span> / </span> {{ node.field_pays_et_villes.value }}</p> #}
 
         </div>
       </div>

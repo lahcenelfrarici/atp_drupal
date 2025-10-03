@@ -755,6 +755,18 @@ body:not(.path-frontpage) a.navbar-brand.logo__2 {
   .ui-widget-content.ui-front {
     margin: 0 30px;
   }
+  #slider--animate .slide-title {
+    font-size: 28px;
+}
+
+#slider--animate .slide-content {
+    padding: 30px;
+    justify-content: center;
+}
+
+section.banner_bread.carriere.Project_detail_page_banner >div>div {
+    height: auto !important;
+}
 }
 
 @media (max-width: 767px) {}
