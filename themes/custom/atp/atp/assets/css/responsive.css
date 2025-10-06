@@ -104,6 +104,9 @@
 }
 
 @media (min-width: 992px) {
+  section.Project_detail_page .container {
+    gap: 0 40px;
+}
   div#slider--animate .aligne__this {
     justify-content: start;
     gap: 0 80px;
