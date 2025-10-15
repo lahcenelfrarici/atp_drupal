@@ -779,3 +779,10 @@ h3.project-title_aligne {
 }
 .video-wrapper.position-relative {position: relative;
 }
+.title--top-vd {
+
+    font-family: "NimbusSanL bol";
+}
+#block-atp-hpsectionslider #slider--animate .slide-title {
+    border-right: 0px solid white;
+}

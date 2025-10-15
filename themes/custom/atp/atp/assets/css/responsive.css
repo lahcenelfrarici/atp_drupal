@@ -244,6 +244,15 @@
 }
 
 @media (max-width: 991px) {
+  #block-atp-hpsectionslider #slider--animate .slide-title {
+    white-space: normal;
+    overflow: hidden;
+    animation: initial;
+}
+  .title--top-vd {
+    font-size: 40px;
+
+}
   #slider--animate .owl-slide img {
     object-fit: cover;
   }
