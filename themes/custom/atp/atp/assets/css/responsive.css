@@ -105,6 +105,22 @@
 
 @media (min-width: 992px) {
 
+.section--2-modal .video-wrapper {
+  width: 100%;
+  height: auto;
+  position: relative !important;
+}
+
+div#block-atp-our-hestory2 .section--2-modal .video-wrapper.position-relative img {
+  height: auto;
+}
+
+#block-atp-our-hestory2 .row.align-items-center {
+  justify-content: space-between;
+}
+#slider--animate .slide-content {
+  margin-left: 6%;
+}
 .col-md-4.text-center.item__3 .video-wrapper.position-relative::after {
   opacity: 0;
 }
