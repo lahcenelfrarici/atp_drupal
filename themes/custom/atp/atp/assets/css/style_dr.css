@@ -790,3 +790,11 @@ h3.project-title_aligne {
     position: relative;
     top: -10px;
 }
+  div#block-atp-our-hestory1 section.banner_bread.carriere h1.slide-title.text-center {
+    text-align: left !important;
+    justify-content: left;
+    font-size: 38px !important;
+}
+div#block-atp-our-hestory1 section.banner_bread.carriere h1.slide-title.text-center + p {
+    display: none;
+}
