@@ -104,6 +104,15 @@
 }
 
 @media (min-width: 992px) {
+  .counter-container-1 {
+    padding-left: 60px;
+}
+
+
+
+.counter-container {
+    padding-left: 60px;
+}
 
   .title--top-vd {
 
@@ -247,6 +256,16 @@
 }
 
 @media (max-width: 991px) {
+  div#block-atp-our-hestory1 section.banner_bread.carriere h1.slide-title.text-center {
+
+    font-size: 28px !important;
+}
+#slider--animate .slide-content {
+    justify-content: end;
+}
+  .col-md-4.text-center.item__3 {
+    padding: 15px;
+}
   #block-atp-hpsectionslider #slider--animate .slide-title {
     white-space: normal;
     overflow: hidden;

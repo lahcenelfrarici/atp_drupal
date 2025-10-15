@@ -826,3 +826,10 @@ section.banner_bread.carriere.Project_detail_page_banner .owl-slide:after {
 #block-atp-carrieres1 #slider--animate .slide-content h1 + p, #block-atp-carrieres1 #slider--animate .slide-content h1 + p a, #block-atp-carrieres1 #slider--animate .slide-content p {
   display: none !important;
 }
+.col-md-4.text-center.item__3 {
+    padding-top: 40px;
+    padding: 0;
+    padding-top: 40px;
+}
+
+
