@@ -786,3 +786,7 @@ h3.project-title_aligne {
 #block-atp-hpsectionslider #slider--animate .slide-title {
     border-right: 0px solid white;
 }
+.counter-text {
+    position: relative;
+    top: -10px;
+}
