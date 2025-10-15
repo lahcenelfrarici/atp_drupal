@@ -109,10 +109,12 @@
     position: relative;
     top: -30px;
     font-family: "NimbusSanL bol";
+    left: 30px;
 
   }
 .section--2-modal .video-wrapper {
   height: 400px;
+  top: -30px;
 }
   section.Project_detail_page .container {
     gap: 0 40px;
