@@ -125,7 +125,7 @@ div#block-atp-our-hestory2 .section--2-modal .video-wrapper.position-relative im
   opacity: 0;
 }
 .col-md-4.text-center.item__3 >div{
-  height: 400px;
+  height: auto;
 }
 .col-md-4.text-center.item__3 img {
   width: 100%;
@@ -146,12 +146,13 @@ div#block-atp-our-hestory2 .section--2-modal .video-wrapper.position-relative im
     position: relative;
     top: -30px;
     font-family: "NimbusSanL bol";
-    left: 30px;
+    left: 5px;
 
   }
 .section--2-modal .video-wrapper {
   height: 400px;
   top: -30px;
+  width: 100%;
 }
   section.Project_detail_page .container {
     gap: 0 40px;
@@ -209,7 +210,7 @@ div#block-atp-our-hestory2 .section--2-modal .video-wrapper.position-relative im
   }
 
   div#block-atp-our-hestory2 .section--2-modal .video-wrapper.position-relative img {
-    height: 400px;
+    height: auto;
     padding-left: 15px;
   }
 
