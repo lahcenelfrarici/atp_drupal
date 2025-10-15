@@ -104,6 +104,17 @@
 }
 
 @media (min-width: 992px) {
+
+.col-md-4.text-center.item__3 .video-wrapper.position-relative::after {
+  opacity: 0;
+}
+.col-md-4.text-center.item__3 >div{
+  height: 400px;
+}
+.col-md-4.text-center.item__3 img {
+  width: 100%;
+  height: 100%;
+}
   .counter-container-1 {
     padding-left: 60px;
 }

@@ -833,3 +833,6 @@ section.banner_bread.carriere.Project_detail_page_banner .owl-slide:after {
 }
 
 
+.col-md-4.text-center.item__3 .video-wrapper.position-relative::after {
+  opacity: 0;
+}
