@@ -506,11 +506,10 @@ header.header-inside.scrolled button.btn.btn-contact a {
 }
 
 .section--2-modal .btn-play {
-  position: absolute;
+position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   color: #fff;
   border: none;
   border-radius: 50%;
@@ -520,8 +519,11 @@ header.header-inside.scrolled button.btn.btn-contact a {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #fff;
 }
-
+.section--2-modal .btn-play svg path {
+  fill: #750000;
+}
 .metrics-section {
   padding: 80px 0;
   background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);

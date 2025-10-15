@@ -107,10 +107,13 @@
   .title--top-vd {
 
     position: relative;
-    top: -60px;
+    top: -30px;
+    font-family: "NimbusSanL bol";
 
   }
-
+.section--2-modal .video-wrapper {
+  height: 400px;
+}
   section.Project_detail_page .container {
     gap: 0 40px;
   }
