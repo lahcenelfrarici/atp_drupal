@@ -201,22 +201,34 @@
   }
 
   // Start animation for active slide
-  function startAnimation(event) {
-    var activeSlide = $('#slider--animate .owl-item.active').find('.owl-slide');
-    activeSlide.find('.slide-title, .slide-subtitle, .slide-text').css({
-      'opacity': '1',
-      'transform': 'translateY(0)'
-    });
-  }
+ function startAnimation(event) {
+  // Reset all slide-titles first (in case previous had animation)
+  $(".slide-title").removeClass("typewriter");
 
-  // Reset animation for other slides
-  function resetAnimation(event) {
-    var allSlides = $('#slider--animate .owl-slide');
-    allSlides.find('.slide-title, .slide-subtitle, .slide-text').css({
-      'opacity': '0',
-      'transform': 'translateY(30px)'
-    });
-  }
+  // Select active slide
+  var activeSlide = $('#slider--animate .owl-item.active .slide-title');
+
+  // Reset opacity & transform to trigger CSS transition
+  activeSlide.css({
+    'opacity': '1',
+    'transform': 'translateY(0)'
+  });
+
+  // Force reflow to restart animation
+  void activeSlide[0].offsetWidth;
+
+  // Add animation class
+  activeSlide.addClass("typewriter");
+}
+
+function resetAnimation(event) {
+  // Reset styles & remove animation class
+  $(".slide-title").css({
+    'opacity': '0',
+    'transform': 'translateY(30px)'
+  }).removeClass("typewriter");
+}
+
 
   // Header scroll effect
 

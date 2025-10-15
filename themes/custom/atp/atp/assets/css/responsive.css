@@ -104,6 +104,13 @@
 }
 
 @media (min-width: 992px) {
+  .title--top-vd {
+
+    position: relative;
+    top: -60px;
+
+  }
+
   section.Project_detail_page .container {
     gap: 0 40px;
   }

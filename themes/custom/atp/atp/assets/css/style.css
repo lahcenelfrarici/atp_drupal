@@ -1,14 +1,23 @@
 @font-face {
   font-family: "Electrolize";
-  src: url("../webfonts/Electrolize-Regular.ttf");
+  src: url("../webfonts/NimbusSanL-Reg.otf");
   font-display: swap;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("../webfonts/Roboto-Regular.ttf");
+  src: url("../webfonts/NimbusSanL-Reg.otf");
   font-display: swap;
 }
-
+@font-face {
+  font-family: "NimbusSanL bol";
+  src: url("../webfonts/NimbusSanL-Bol.otf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "NimbusSanL light";
+  src: url("../webfonts/nimbus-sans-light.otf");
+  font-display: swap;
+}
 /* @font-face {
   font-family: "Nunito Sans";
   src: url("../webfonts/NunitoSans-Regular.ttf");
@@ -46,7 +55,9 @@
 } */
 
 
-
+section.section--4 .project-title,.see-all-link{
+    font-family: "NimbusSanL light" !important;
+}
 a:hover {
   text-decoration: none;
   color: #335AB7;
@@ -158,7 +169,7 @@ body {
 
 #slider--animate .slide-title {
   font-size: 45px;
-  font-weight: 400;
+  font-weight: bold;
   margin-bottom: 20px;
   opacity: 0;
   transform: translateY(30px);
@@ -614,7 +625,7 @@ line-height: 24px; /* 150% */
 
 }
 .counter-item {
-  text-align: center;
+  text-align: left;
   padding: 20px;
   flex: 1;
   width: 33%;
@@ -706,7 +717,7 @@ line-height: 24px; /* 150% */
   font-family: Electrolize;
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: bold;
   line-height: normal;
   /* 138.462% */
 }
@@ -856,9 +867,13 @@ line-height: 24px; /* 150% */
   font-style: normal;
   font-weight: 400 !important;
   line-height: 60px;
+   font-family: "NimbusSanL bol";
   /* 125% */
 }
-
+#slider--animate .slide-title{
+   font-family: "NimbusSanL bol";
+     font-weight: 400 !important;
+}
 section {
   padding: 40px 0;
 }
@@ -2620,7 +2635,7 @@ section.section--5 .owl-stage-outer {
 .project-card.card a {
     height: 100%;
 }
-.project-card.card:after {
+.project-card.card:hover::after {
     position: absolute;
     top: 0;
     left: 0;
