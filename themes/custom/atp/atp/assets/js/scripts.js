@@ -187,7 +187,7 @@
     $("#slider--animate").owlCarousel({
       items: 1,
       loop: true,
-      autoplay: false,
+      autoplay: true,
       autoplayTimeout: 6000,
       autoplayHoverPause: true,
       smartSpeed: 1000,
