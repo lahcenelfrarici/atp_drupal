@@ -718,9 +718,10 @@ line-height: 24px; /* 150% */
   margin-bottom: 0;
   color: #FFF;
   font-family: Electrolize;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: bold;
+  text-transform: uppercase;
   line-height: normal;
   /* 138.462% */
 }
