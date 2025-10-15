@@ -823,3 +823,6 @@ section.banner_bread.carriere.Project_detail_page_banner .owl-slide:after {
     z-index: 1;
     content: "";
 }
+#block-atp-carrieres1 #slider--animate .slide-content h1 + p, #block-atp-carrieres1 #slider--animate .slide-content h1 + p a, #block-atp-carrieres1 #slider--animate .slide-content p {
+  display: none !important;
+}
