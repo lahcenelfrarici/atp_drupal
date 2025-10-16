@@ -104,7 +104,15 @@
 }
 
 @media (min-width: 992px) {
-
+    .banner_bread.carriere.Project_detail_page_banner #slider--animate .slide-title {
+    padding-bottom: 20px !important;
+    transform: translateY(30px) !important;
+  }
+}
+#slider--animate .slide-title {
+  padding-bottom: 0;
+  transform: translateY(57px);
+}
 .section--2-modal .video-wrapper {
   width: 100%;
   height: auto;
