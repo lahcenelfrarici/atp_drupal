@@ -1,6 +1,14 @@
 (function ($) {
 
+var currentPath = window.location.pathname;
 
+    $('.button-row a').each(function () {
+      var linkPath = $(this).attr('href');
+
+      if (linkPath === currentPath) {
+        $(this).addClass('active');
+      }
+    });
 // Get the current path
   var path = window.location.pathname;
 
@@ -241,6 +249,8 @@ function resetAnimation(event) {
     'object-fit': 'cover',
     'z-index': '0'
   });
+
+//
 
 
 })(jQuery);

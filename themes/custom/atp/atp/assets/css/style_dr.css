@@ -839,7 +839,7 @@ section.banner_bread.carriere.Project_detail_page_banner .owl-slide:after {
 .col-md-4.text-center.item__3 {
   display: none;
 }
-.insc__form_sc input::placeholder {
+/* .insc__form_sc input::placeholder {
     color: #e7e4e4 !important;
     font-size: 18px;
 }
@@ -850,4 +850,26 @@ section.banner_bread.carriere.Project_detail_page_banner .owl-slide:after {
 
 .insc__form_sc form >div .wrapper_submit svg {
     display: none;
+} */
+.button-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.button-row a button {
+  text-transform: uppercase;
+}
+
+
+.button-row .active {
+  background: #600100;
+  color: #fff;
+  border-radius: 15px;
+  padding: 2px 7px;
+}
+.button-row .active button {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 0;
 }
