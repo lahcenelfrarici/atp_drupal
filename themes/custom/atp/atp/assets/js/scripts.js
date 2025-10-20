@@ -1,15 +1,69 @@
+
+jQuery(document).ready(function ($) {
+  // Find all .wrapper_img elements that do not contain an <img> tag
+  $('.wrapper_img').each(function () {
+    if ($(this).find('img').length === 0) {
+      $(this).remove(); // Remove the empty .wrapper_img element
+    }
+  });
+});
+
 (function ($) {
+  //
+  // Function to check screen size and modify the attribute
+  function toggleDropdownAttribute() {
+    var $dropdownLink = $('.nav-item.dropdown .nav-link');
 
-var currentPath = window.location.pathname;
+    if ($(window).width() >= 992) { // For desktop view (width >= 992px)
+      $dropdownLink.removeAttr('data-bs-toggle'); // Remove the dropdown toggle attribute
+    } else {
+      $dropdownLink.attr('data-bs-toggle', 'dropdown'); // Add it back for mobile
+    }
+  }
 
-    $('.button-row a').each(function () {
-      var linkPath = $(this).attr('href');
+  // Call the function on page load
+  toggleDropdownAttribute();
 
-      if (linkPath === currentPath) {
-        $(this).addClass('active');
-      }
-    });
-// Get the current path
+  // Call the function whenever the window is resized
+  $(window).resize(function () {
+    toggleDropdownAttribute();
+  });
+  //
+  // Find all .wrapper_img elements that do not contain an <img> tag
+  // $('.wrapper_img').each(function () {
+  //   if ($(this).find('img').length === 0) {
+  //     $(this).remove(); // Remove the empty .wrapper_img element
+  //   }
+  // });
+  //
+$('.galerie-de-projets').each(function () {
+  var $section = $(this);
+
+  // Only proceed if there is no .container inside already
+  if ($section.find('.container').length === 0) {
+    // Create new container
+    var $container = $('<div class="container"></div>');
+
+    // Move all .wrapper_img elements into the container
+    $section.find('.wrapper_img').appendTo($container);
+
+    // Insert the container right after the .title--sc block
+    $section.find('.title--sc').after($container);
+  }
+});
+
+
+
+  var currentPath = window.location.pathname;
+
+  $('.button-row a').each(function () {
+    var linkPath = $(this).attr('href');
+
+    if (linkPath === currentPath) {
+      $(this).addClass('active');
+    }
+  });
+  // Get the current path
   var path = window.location.pathname;
 
   // Normalize the path (remove trailing slash)
@@ -209,33 +263,33 @@ var currentPath = window.location.pathname;
   }
 
   // Start animation for active slide
- function startAnimation(event) {
-  // Reset all slide-titles first (in case previous had animation)
-  $(".slide-title").removeClass("typewriter");
+  function startAnimation(event) {
+    // Reset all slide-titles first (in case previous had animation)
+    $(".slide-title").removeClass("typewriter");
 
-  // Select active slide
-  var activeSlide = $('#slider--animate .owl-item.active .slide-title');
+    // Select active slide
+    var activeSlide = $('#slider--animate .owl-item.active .slide-title');
 
-  // Reset opacity & transform to trigger CSS transition
-  activeSlide.css({
-    'opacity': '1',
-    'transform': 'translateY(0)'
-  });
+    // Reset opacity & transform to trigger CSS transition
+    activeSlide.css({
+      'opacity': '1',
+      'transform': 'translateY(0)'
+    });
 
-  // Force reflow to restart animation
-  void activeSlide[0].offsetWidth;
+    // Force reflow to restart animation
+    void activeSlide[0].offsetWidth;
 
-  // Add animation class
-  activeSlide.addClass("typewriter");
-}
+    // Add animation class
+    activeSlide.addClass("typewriter");
+  }
 
-function resetAnimation(event) {
-  // Reset styles & remove animation class
-  $(".slide-title").css({
-    'opacity': '0',
-    'transform': 'translateY(30px)'
-  }).removeClass("typewriter");
-}
+  function resetAnimation(event) {
+    // Reset styles & remove animation class
+    $(".slide-title").css({
+      'opacity': '0',
+      'transform': 'translateY(30px)'
+    }).removeClass("typewriter");
+  }
 
 
   // Header scroll effect
@@ -250,11 +304,10 @@ function resetAnimation(event) {
     'z-index': '0'
   });
 
-//
+  //
 
 
 })(jQuery);
 // $(document).ready(function () {
 //   $('#exampleModal').modal('show');
 // });
-

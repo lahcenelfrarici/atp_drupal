@@ -127,6 +127,7 @@ body {
   left: 0;
   background-color: #fff;
   transition: width 0.3s;
+  border: 0;
 }
 
 .header-inside .nav-link:hover {
