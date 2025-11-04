@@ -618,7 +618,7 @@ button.ui-dialog-titlebar-close {
   max-height: none !important;
   color: #fff;
   font-family: Electrolize;
-  text-transform: capitalize;
+  text-transform: initial;
 }
 
 .ui-dialog .ui-widget-header {
@@ -872,4 +872,36 @@ section.banner_bread.carriere.Project_detail_page_banner .owl-slide:after {
   color: #fff;
   font-size: 16px;
   margin-bottom: 0;
+}
+#block-atp-carrieres1 section.banner_bread.carriere h1.slide-title.text-center {
+  text-align: left !important;
+  justify-content: left;
+  font-size: 38px !important;
+}
+header.header-inside .container ul ul {
+  background: transparent;
+}
+
+header.header-inside.scrolled .nav-item.dropdown svg path {
+
+  stroke: #fff;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+header.header-inside .container ul ul {
+  margin-top: 0;
+}
+.banner_bread.carriere.Project_detail_page_banner + div > .galerie-de-projets {
+  padding-top: 40px;
+  padding-bottom: 0;
+}
+.galerie-de-projets {
+  padding-bottom: 0;
+}
+.footer---btm .row > div:first-child p{
+  display: none;
+}
+.postes-ouverts .posy_all_offre.container.my-4 {
+  margin-top: -10px !important;
 }
