@@ -1,6 +1,17 @@
 /* Responsive adjustments */
 @media (max-width: 992px) {
 
+  /* .header-inside .nav-link:hover {
+    color: white;
+  } */
+  header.header-inside .container ul ul {
+    z-index: 999;
+  }
+
+  .path-projets .header-inside.scrolled .nav-link:hover,
+  .path-projets .header-inside.scrolled .nav-link.active {
+    color: #fff !important;
+  }
 
   #slider--animate .slide-content {
     margin-left: 5%;
@@ -60,6 +71,8 @@
 }
 
 @media (max-width: 768px) {
+
+
   .counter-container {
     flex-direction: column;
     align-items: center;
@@ -104,6 +117,17 @@
 }
 
 @media (min-width: 992px) {
+  #mobile_multi_right {
+    display: none;
+  }
+
+  .mobile__modal {
+    display: none;
+  }
+
+  .job-card h5 {
+    height: 88px;
+  }
 
   header.header-inside .container ul li svg,
   header.header-inside .container ul li ul {
@@ -156,7 +180,17 @@
     padding-left: 60px;
   }
 
+  /*  */
+  .counter-container-1 {
+    width: 24%;
+  }
 
+  .counter-container>div {
+    /* background: #000; */
+    padding: 10px;
+    width: 24%;
+    flex: inherit;
+  }
 
   .counter-container {
     padding-left: 60px;
@@ -169,6 +203,11 @@
     font-family: "NimbusSanL bol";
     left: 5px;
 
+  }
+
+  .counter-container {
+    width: 100%;
+    padding-left: 0;
   }
 
   .section--2-modal .video-wrapper {
@@ -187,12 +226,14 @@
   }
 
   section.galerie-de-projets .container>div {
-    height: 300px;
+    height: auto;
   }
 
   section.galerie-de-projets .container>div img {
     height: 100%;
-    object-fit: cover;
+
+    aspect-ratio: 12 / 9;
+    object-position: top;
   }
 
   section.galerie-de-projets .container>div {
@@ -279,7 +320,7 @@
     padding-bottom: 70px;
   }
 
-  header.header-inside .container ul li:last-child {
+  header.header-inside .container ul .nav-item:last-child {
     display: none;
   }
 
@@ -307,6 +348,14 @@
 }
 
 @media (max-width: 991px) {
+  .desktop__modal {
+    display: none;
+  }
+
+  header.header-inside .container ul ul .nav-link.active {
+    font-weight: 400;
+  }
+
   header.header-inside .container ul>li>a.show svg {
     transform: rotate(180deg);
   }
@@ -320,7 +369,16 @@
   header.header-inside .container ul>li>a {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
+  }
+
+  .path-projets .section--4 {
+    padding-top: 0;
+  }
+
+  header.header-inside .container ul>li>a svg {
+    position: relative;
+    right: -100px;
   }
 
   .button-row {
@@ -912,6 +970,187 @@ body:not(.path-frontpage) a.navbar-brand.logo__2 {
 
   section.carriere .slide-content {
     padding-left: 30px !important;
+  }
+
+  /*  */
+
+
+
+  div#block-atp-our-hestory1 #slider--animate .slide-content {
+    bottom: 0;
+    justify-content: end;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  div#block-atp-our-hestory1 section.banner_bread.carriere h1.slide-title.text-center {
+
+    transform: translateY(0px);
+  }
+
+
+
+
+  .banner_bread.carriere.Project_detail_page_banner #slider--animate .slide-content {
+    bottom: 0;
+    justify-content: end;
+    padding-bottom: 30px;
+  }
+
+
+
+  #block-atp-carrieres1 #slider--animate .slide-content {
+    bottom: 0;
+    justify-content: end;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  #block-atp-carrieres1 section.banner_bread.carriere h1.slide-title.text-center {
+
+    transform: translateY(0px);
+    font-size: 28px !important;
+  }
+
+
+
+
+  #block-atp-bannercontact #slider--animate .slide-content {
+    bottom: 0;
+    justify-content: end;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+  }
+
+  header.header-inside .right--contact-multi-langue ul {
+    margin-top: 0;
+  }
+
+  /*  */
+  .section--2-modal .row .text-center {
+    padding: 0 25px;
+  }
+
+  .path-frontpage .section--2-modal.py-5 .title--sc {
+    padding-bottom: 0;
+  }
+
+  .path-frontpage .section--2-modal.py-5 .btn-discover {
+    margin-top: 15px;
+  }
+
+  .section--2-modal .row>div {
+    margin-bottom: 0 !important;
+  }
+
+  .views-element-container section.section--4 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  section.section--5 .owl-stage-outer {
+    margin-top: 0;
+  }
+
+  .title--sc h2 {
+    line-height: normal;
+  }
+
+  #block-atp-our-hestory2 {
+    padding-bottom: 20px;
+  }
+
+  .notre-histoire .title--sc p {
+    display: none;
+  }
+
+  .pourquoi-nous-rejoindre.pourquoi-nous-carriere .title--sc h2 {
+    padding-bottom: 15px;
+  }
+
+  .path-frontpage #slider--animate {
+    margin-bottom: 30px;
+  }
+
+  #block-atp-notremission {
+    padding-top: 10px;
+  }
+
+  .footer---btm p {
+
+    margin-bottom: 7px;
+  }
+
+  .path-projets .views-element-container section.section--4 {
+    padding-top: 10px !important;
+    position: relative;
+    top: -14px;
+  }
+
+  .path-projets .intro-text.title--sc {
+    margin-bottom: 0;
+  }
+
+  .pourquoi-nous-rejoindre.pourquoi-nous-carriere .title--sc h2 {
+    font-size: 30px;
+  }
+
+  .pourquoi-nous-carriere .benefit-title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  #postes-ouverts {
+    padding-top: 15px;
+  }
+
+  #postes-ouverts h2 {
+    line-height: normal;
+  }
+
+  .footer---btm p a {
+    position: relative;
+    left: -15px;
+  }
+
+  .title--sc h2 {
+    font-size: 30px !important;
+  }
+
+  .title--top-vd {
+    font-size: 30px;
+  }
+
+  .project-category {
+    font-size: 16px;
+  }
+
+  .project-card .card-body {
+    padding: 5px 10px;
+  }
+
+  .project-card.card img {
+    height: auto;
+    object-fit: contain;
+    aspect-ratio: initial;
+  }
+
+  /*  */
+  .header-inside .logo__2,
+  .header-inside .logo__1 {
+    margin: auto;
+    position: relative;
+    right: 0;
+  }
+
+  .sc---prj-1+.section--4 {
+    padding-top: 10px !important;
+    position: relative;
+    top: -14px;
+  }
+
+  .intro-text.title--sc {
+    margin-bottom: 0;
   }
 }
 
